@@ -286,12 +286,12 @@ const Header = ({ theme, toggleTheme }) => {
     return (
         <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? (theme === 'dark' ? 'bg-[#111111]/80 backdrop-blur-lg border-b border-gray-800' : 'bg-white/80 backdrop-blur-lg border-b border-gray-300') : 'bg-transparent'}`}>
             <nav className="container mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
-                <div
-                    className={`text-2xl font-bold tracking-wider cursor-pointer ${theme === 'dark' ? 'text-white' : 'text-black'}`}
+                <img
+                    src="/Logo.png"
+                    alt="Techfaim Logo"
+                    className="h-10 cursor-pointer"
                     onClick={handleScrollToTop}
-                >
-                    TECH<span className="text-[#00FFC6]" style={{textShadow: '0 0 8px #00FFC6'}}>F</span>AIM
-                </div>
+                />
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map(link => (
                         <a
