@@ -164,7 +164,7 @@ const Header = ({ theme, toggleTheme }) => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? (theme === 'dark' ? 'bg-gray-900/95 backdrop-blur-lg border-b border-cyan-500/20' : 'bg-white/95 backdrop-blur-lg border-b border-cyan-500/20') : 'bg-transparent'}`}>
       <nav className="container mx-auto px-6 md:px-12 py-5 flex justify-between items-center">
         <a href="https://www.techfaim.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/New Logo.png" alt="TechFaim Logo" className="h-40 w-auto" />
+          <img src="New Logo.png" alt="TechFaim Logo" className="h-40 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center space-x-8">
